@@ -8,6 +8,6 @@
 #' @export
 lottosample<-function(n,keep=NULL,drop=NULL,a=list()){
 for(i in 1:n){a[[i]]<-sort(sample(1:45,6,prob=del(keep=keep,drop=drop)))
-ptint(a[[i]])}
+print(a[[i]])}
   return(a)}
 

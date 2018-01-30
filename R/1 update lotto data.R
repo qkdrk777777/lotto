@@ -28,3 +28,6 @@ out
 }
 #라이브러리에 데이터 저장하는법
 #devtools::use_data(data, internal = TRUE)
+#lottonum<-data_update()
+#devtools::use_data(lottonum, internal = F)
+

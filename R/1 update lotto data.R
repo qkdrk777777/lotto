@@ -9,6 +9,7 @@
 data_update<-function(){
   library(DUcj)
   package(rvest)
+  package(stringr)
 url2<-'https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%A1%9C%EB%98%90&oquery=%EB%A1%9C%EB%98%90&tqi=TmrKidpVuFdsssc0EvVssssssUd-075322'
 line2<-read_html(url2,encoding="UTF-8")
 p1<-html_nodes(line2,css='._lotto-btn-current em')%>%html_text()

@@ -1,6 +1,9 @@
 #' generate lottodata2
 #'
 #' @return lotto data2
+#' @examples
+#' data2<-data_update()
+#' round(cor(data2),3)
 #' @export
 data_update2<-function(data=data_update()){
 data2<-matrix(0,ncol=45,nrow=nrow(data));colnames(data2)=1:45

@@ -6,6 +6,11 @@
 \usage{
 del(n = 100, tol = 1, keep = NULL, drop = NULL)
 }
+\arguments{
+\item{n}{= Number to consider.}
+
+\item{tol}{=Range of absolute values}
+}
 \description{
 delete of number
 }

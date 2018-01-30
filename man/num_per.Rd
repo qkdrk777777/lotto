@@ -9,3 +9,8 @@ num_per(data2 = data_update2(), num_per = NULL)
 \description{
 Probability of a number
 }
+\examples{
+per<-num_per()/num_per(data=data_update2()[1:100,])
+(del_num<-as.numeric(names(per[per<1])))
+round(cor(data2),3)
+}

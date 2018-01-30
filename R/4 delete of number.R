@@ -1,5 +1,7 @@
 #' delete of number
 #'
+#' @param n = Number to consider.
+#' @param tol =Range of absolute values
 #' @return
 #' @export
 del<-function(n=100,tol=1,keep=NULL,drop=NULL){

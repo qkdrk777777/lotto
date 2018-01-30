@@ -7,6 +7,11 @@
 numdata(a, b, first = 1, last, css = ".num_box", encoding = "UTF-8",
   num = list(), output = list(), k = 1)
 }
+\arguments{
+\item{css}{= Nodes to select. Supply one of css or xpath depending on whether you want to use a css or xpath 1.0 selector.}
+
+\item{t}{= url of list form}
+}
 \description{
 generate lottodata
 }

@@ -1,5 +1,8 @@
 #' generate lottodata
 #'
+#' @param t = url of list form
+#' @param css = Nodes to select. Supply one of css or xpath depending on whether you want to use a css or xpath 1.0 selector.
+#' @return
 #' @examples
 #' a='https://search.naver.com/search.naver?sm=tab_drt&where=nexearch&query='
 #' b='%ED%9A%8C%EB%A1%9C%EB%98%90'

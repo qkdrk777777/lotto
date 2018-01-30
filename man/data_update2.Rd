@@ -12,3 +12,7 @@ lotto data2
 \description{
 generate lottodata2
 }
+\examples{
+data2<-data_update()
+round(cor(data2),3)
+}

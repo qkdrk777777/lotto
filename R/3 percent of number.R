@@ -11,6 +11,7 @@ num_per<-function(data2=type2data,num_per=NULL){
   names(num_per)=1:45
   num_per}
 #type2data<-data_update2()
+#save(file="D:/packages/lotto/data/type2data.rda",type2data)
 #devtools::use_data(type2data, internal = F)
 
 #library(roxygen2)

@@ -6,13 +6,12 @@
 #' lottosample(n=5,keep=k[1])
 #' @return
 #' @export
-lottosample<-function(n,keep=NULL,drop=NULL,a=NULL,hold=NULL){
-if(length(hold)==0)
-{for(i in 1:n){b<-sort(sample(1:45,6,prob=del(keep=keep,drop=drop)))
-a<-rbind(a,b)
-print(b)}}else {for(i in 1:n){b<-sort(c(hold,sample(1:45,6-length(hold),prob=del(keep=keep,drop=unique(c(hold,drop))))))
-  a<-rbind(a,b)
-  print(b)}}
+lottosample<-function(n,keep=NULL,drop=NULL,hold=NULL,a=NULL){
+  if(length(hold)==0){for(i in 1:n){a<-rbind(a,sort(sample(1:45,6,prob=del(keep=keep,drop=drop))))}
+  }else {for(i in 1:n){a<-rbind(a,sort(c(hold,sample(1:45,(6-length(hold)),prob=del(keep=keep,drop=unique(c(hold,drop)))))))}
+  }
   return(a)}
 
-lottosample(hold=3,drop=3,n=50)
+
+
+#repsample(10000,count=3)

@@ -4,7 +4,8 @@
 \alias{lottosample}
 \title{sample}
 \usage{
-lottosample(n, keep = NULL, drop = NULL)
+lottosample(n, keep = NULL, drop = NULL, hold = NULL, a = NULL,
+  write = F)
 }
 \arguments{
 \item{n}{= number of sample}

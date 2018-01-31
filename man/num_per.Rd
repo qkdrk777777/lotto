@@ -4,7 +4,7 @@
 \alias{num_per}
 \title{Probability of a number}
 \usage{
-num_per(data2 = data_update2(), num_per = NULL)
+num_per(data2 = type2data, num_per = NULL)
 }
 \description{
 Probability of a number

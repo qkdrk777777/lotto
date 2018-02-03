@@ -31,5 +31,5 @@ if(data[1,7]!=lastRaffle)
 #devtools::use_data(data, internal = F,overwrite=T)
 #save(file="D:/packages/lotto/data/data.rda",data)
 #lottonum<-data_update()
-#devtools::use_data(lottonum, internal = F)
+#devtools::use_data(lottonum, internal = F,overwrite=T)
 

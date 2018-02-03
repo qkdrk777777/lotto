@@ -10,7 +10,7 @@
 #'line<-read_html(url,encoding="UTF-8")
 #'p1<-html_nodes(line,css='._lotto-btn-current em')%>%html_text()
 #'last=as.numeric(substr(p1,1,3))
-#' numdata(a,b,last=last)
+#' (data<-numdata(a,b,last=last))
 #' @export
 numdata<-function(a,b,first=1,last,css='.num_box',encoding='UTF-8',num=list(),output=list(),k=1)
 { package('XML');  package('stringr');  package('rvest')

@@ -27,7 +27,7 @@ if(data[1,7]!=lastRaffle)
 
 }
 #라이브러리에 데이터 저장하는법
-data
+#data
 #devtools::use_data(data, internal = F)
 #save(file="D:/packages/lotto/data/data.rda",data)
 #lottonum<-data_update()

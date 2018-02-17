@@ -7,6 +7,7 @@
 #' data<-data_update()
 #' @export
 data_update<-function(){
+
   library(DUcj)
   package(rvest)
   package(stringr)
@@ -19,7 +20,7 @@ lastRaffle<-as.numeric(str_replace_all(p1,"[^0-9]",""))
 #data<-read.csv("D:/packages/lotto/lotto.csv",header=T,row.names = 1)
 if(data[1,7]==nrow(data)){
 if(data[1,7]!=lastRaffle)
-  {data2<-numdata(a,b,first=data[1,7],last=lastRaffle)
+  {data2<-numdata(a,b,first=data[1,7],last=lastRaffle+1)
   out<-rbind(data2,data)}
   else{out<-data}
 }else {out<-numdata(a,b,last=lastRaffle) }

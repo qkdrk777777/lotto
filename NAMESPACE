@@ -3,6 +3,7 @@
 export(data_update)
 export(data_update2)
 export(del)
+export(lot)
 export(lottocheck)
 export(lottosample)
 export(num_per)

@@ -18,5 +18,9 @@ generate lottodata
 \examples{
 a='https://search.naver.com/search.naver?sm=tab_drt&where=nexearch&query='
 b='\%ED\%9A\%8C\%EB\%A1\%9C\%EB\%98\%90'
-numdata(a,b,last=789)
+url<-'https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=\%EB\%A1\%9C\%EB\%98\%90&oquery=\%EB\%A1\%9C\%EB\%98\%90&tqi=TmrKidpVuFdsssc0EvVssssssUd-075322'
+line<-read_html(url,encoding="UTF-8")
+p1<-html_nodes(line,css='._lotto-btn-current em')\%>\%html_text()
+last=as.numeric(substr(p1,1,3))
+(data<-numdata(a,b,last=last))
 }

@@ -4,9 +4,12 @@
 #' @examples lot(1000)
 #' @return
 #' @export
-lot<-function(n,a=NULL,head=10,write=F){
-b<-a
-num<-num_per()/num_per(data=data_update2()[1:100,])
+lot<-function(n,a=NULL,b=NULL,head=10,write=F){
+if(!require(devtools))install.packages('devtools')
+  library(devtools)
+    if(!require(lotto))install_github('qkdrk777777/lotto')
+  library(lotto)
+num<-num_per()/num_per(data=type2data[1:100,])
 if(!require(progress))install.packages('progress')
 Sys.sleep(0.01)
 library(progress)
